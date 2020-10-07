@@ -4,7 +4,7 @@
   "description": "Javascript client for pulling from dWeather.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   "homepage": "https://github.com/Arbol-Project/dWeather-js-client#readme",
   "dependencies": {
     "bent": "7.3.10",
-    "js-ipfs": "0.0.301",
-    "node-fetch": "2.6.1"
+    "js-ipfs": "0.0.301"
+  },
+  "devDependencies": {
+    "jest": "26.5.2"
   }
 }

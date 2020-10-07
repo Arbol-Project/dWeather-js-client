@@ -1,13 +1,10 @@
 var ipfsClient = require('./ipfs-client.js')
-
-ipfsClient
-ipfsClient.getHeads
-
+var utils = require('/.utils.js')
 
 module.exports = {
   getHeads: ipfsClient.getHeads,
   getStationCSV: ipfsClient.getStationCSV,
-
+  getMetadata: ipfsClient.getMetadata,
+  snapToGrid: utils.snapToGrid,
 };	
 
-//lib.getHeads().then((result) => { console.log(result) })
