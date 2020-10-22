@@ -1,6 +1,6 @@
 {
   "name": "@arbol/dweather-client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Javascript client for pulling from dWeather.",
   "main": "src/index.js",
   "scripts": {
