@@ -8,11 +8,7 @@ function snapToGrid(lat, lon, metadata) {
   *     metadata: a dWeather metadata file
   */
   resolution = metadata['resolution'];
-  if (resolution === 0.04166667) {
-    min_lat = 24.08333333;
-  } else {
-    min_lat = metadata['latitude range'][0];
-  }
+  min_lat = metadata['latitude range'][0];
   min_lon = metadata['longitude range'][0];
   snap_lat = (Math.round((lat - min_lat) / resolution) * resolution + min_lat).toFixed(3);
   snap_lon = (Math.round((lon - min_lon) / resolution) * resolution + min_lon).toFixed(3);
