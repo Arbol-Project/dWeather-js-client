@@ -7,12 +7,13 @@ function snapToGrid(lat, lon, metadata) {
   *     lon = -180 < lon < 180, float
   *     metadata: a dWeather metadata file
   */
-  resolution = metadata['resolution']
-  min_lat = metadata['latitude range'][0]  
-  min_lon = metadata['longitude range'][0]
-  snap_lat = (Math.round((lat - min_lat) / resolution) * resolution + min_lat).toFixed(3)
-  snap_lon = (Math.round((lon - min_lon) / resolution) * resolution + min_lon).toFixed(3)
-  return [snap_lat, snap_lon]     
+
+  resolution = metadata['resolution'];
+  min_lat = metadata['latitude range'][0];
+  min_lon = metadata['longitude range'][0];
+  snap_lat = (Math.round((lat - min_lat) / resolution) * resolution + min_lat).toFixed(3);
+  snap_lon = (Math.round((lon - min_lon) / resolution) * resolution + min_lon).toFixed(3);
+  return [snap_lat, snap_lon]; 
 };
 
 
